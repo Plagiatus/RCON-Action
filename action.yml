@@ -1,13 +1,27 @@
-name: Hello World
-description: Greet someone and record the time
+name: Send RCON commands
+description: Send command(s) via RCON connection to a RCON server
 inputs:
-  who-to-greet:
+  server:
     required: true
-    description: Who to greet
-    default: World
-outputs:
-  time:
-    description: The time we greeted you
+    description: The server IP address
+  port:
+    required: true
+    description: The server's RCON port
+    default: 25575
+  password:
+    required: true
+    description: The RCON password to authenticate
+  commands:
+    required: true
+    description: Additional commands to send
+  send-push-info:
+    required: false
+  	description: Sends information about the push to the server as a tellraw
+    default: true
+  push-info-recipient:
+    required: false
+    description: Changes the selector of who should be getting the server info.
+    default: "@a"
 runs:
   using: node12
   main: index.js
