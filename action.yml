@@ -1,0 +1,13 @@
+name: Hello World
+description: Greet someone and record the time
+inputs:
+  who-to-greet:
+    required: true
+    description: Who to greet
+    default: World
+outputs:
+  time:
+    description: The time we greeted you
+runs:
+  using: node12
+  main: index.js

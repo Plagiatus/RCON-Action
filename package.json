@@ -1,0 +1,29 @@
+{
+  "name": "rcon-action",
+  "version": "0.0.1",
+  "description": "Integrate RCON actions into your github workflow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Plagiatus/RCON-Action.git"
+  },
+  "keywords": [
+    "Github",
+    "Action",
+    "RCON",
+    "Minecraft"
+  ],
+  "author": "Lukas Scheuerle (Plagiatus)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Plagiatus/RCON-Action/issues"
+  },
+  "homepage": "https://github.com/Plagiatus/RCON-Action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
+  }
+}
