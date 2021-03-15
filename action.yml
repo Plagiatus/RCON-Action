@@ -16,7 +16,7 @@ inputs:
     description: Additional commands to send
   send-push-info:
     required: false
-  	description: Sends information about the push to the server as a tellraw
+    description: Sends information about the push to the server as a tellraw
     default: true
   push-info-recipient:
     required: false
