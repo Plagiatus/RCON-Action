@@ -14,7 +14,7 @@ async function run() {
 			server: core.getInput("server"),
 			port: core.getInput("port"),
 			password: core.getInput("password"),
-			commands: core.getInput("commands"),
+			commands: JSON.parse(core.getInput("commands")),
 			sendPushInfo: core.getInput("send-push-info"),
 			pushInfoRecipient: core.getInput("push-info-recipient"),
 		}

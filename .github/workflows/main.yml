@@ -17,4 +17,4 @@ jobs:
           server: ${{ secrets.rcon_server }}
           port: ${{ secrets.rcon_port }}
           password: ${{ secrets.rcon_password }}
-          commands: ["say hi", "reload"]
+          commands: '["say hi", "reload"]'
