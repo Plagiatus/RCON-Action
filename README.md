@@ -8,7 +8,7 @@ Originally created and intended to be used for a more automated use of minecraft
 
 [File in this repository](https://github.com/Plagiatus/RCON-Action/blob/main/.github/workflows/main.yml)
 
-Copy the linked example file under `your_repository/.github/workflow/main.yml`, update and add the [secrets](https://docs.github.com/en/actions/reference/encrypted-secrets) to your repository and you're ready to go. That is if your server has both FTP and RCON enabled.
+To set up with your Minecraft Server via FTP, copy the [linked example file](https://github.com/Plagiatus/YeggsMapjam2021/blob/main/.github/workflows/main.yml) to `your_repository/.github/workflow/main.yml`, update and add the [secrets](https://docs.github.com/en/actions/reference/encrypted-secrets) to your repository and you're ready to go. That is if your server has both FTP and RCON enabled.
 
 ```yml
 name: RCON Test
