@@ -46,3 +46,8 @@ jobs:
 | push-info-recipient | no | Changes the selector of the push info tellraw. | `@a` | `@a[tag=admin]` |
 
 It is highly recommended to use [github secrets](https://docs.github.com/en/actions/reference/encrypted-secrets) instead of plaintext inclusions for more sensitive data like the IP or the password.
+
+## Credits
+
+- Node-RCON taken from https://github.com/tehbeard/node-rcon by @tehbeard.
+- RCON-Action made by @Plagiatus
