@@ -5,12 +5,13 @@ inputs:
     required: true
     description: The server IP address
   port:
-    required: true
+    required: false
     description: The server's RCON port
     default: 25575
   password:
-    required: true
+    required: false
     description: The RCON password to authenticate
+    default: ""
   commands:
     required: true
     description: Additional commands to send
