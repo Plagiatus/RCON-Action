@@ -1,5 +1,5 @@
-name: Send RCON commands
-description: Send command(s) via RCON connection to a RCON server
+name: Send RCON commands to minecraft server
+description: Send command(s) via RCON connection to a RCON enabled minecraft server
 icon: arrow-right-circle
 color: green
 inputs:
