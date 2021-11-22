@@ -1,5 +1,7 @@
 name: Send RCON commands
 description: Send command(s) via RCON connection to a RCON server
+icon: arrow-right-circle
+color: green
 inputs:
   server:
     required: true
