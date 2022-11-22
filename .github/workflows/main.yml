@@ -2,14 +2,14 @@ name: RCON Test
 
 on: 
   push:
-    branches: [ main ]
+    branches: [ env-variables ]
 
   workflow_dispatch:
 
 jobs:
   rcon_test:
     runs-on: ubuntu-latest
-    name: RCON Test
+    name: RCON Test Dev
     steps:
       - name: RCON Connection
         uses: Plagiatus/RCON-Action@v0.1
