@@ -20,4 +20,4 @@ jobs:
           server: ${{ secrets.rcon_server }}
           port: ${{ secrets.rcon_port }}
           password: ${{ secrets.rcon_password }}
-          commands: '["say day $DAY_OF_WEEK", "say ref: ${{ github.ref }}", "say $GITHUB_REF", "reload"]'
+          commands: '["say day ${{DAY_OF_WEEK}}", "say ref: ${{ github.ref }}", "say ip ${{ secrets.rcon_server }}", "say actor ${{ GITHUB_ACTOR }}", "reload"]'
