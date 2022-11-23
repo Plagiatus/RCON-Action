@@ -6,6 +6,9 @@ on:
 
   workflow_dispatch:
 
+env:
+  DAY_OF_WEEK: Monday
+  
 jobs:
   rcon_test:
     runs-on: ubuntu-latest
@@ -17,4 +20,4 @@ jobs:
           server: ${{ secrets.rcon_server }}
           port: ${{ secrets.rcon_port }}
           password: ${{ secrets.rcon_password }}
-          commands: '["say hi", "reload"]'
+          commands: '["say day $DAY_OF_WEEK", "say ${{ GITHUB_REF }}", "say $GITHUB_REF", "reload"]'
