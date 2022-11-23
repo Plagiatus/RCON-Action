@@ -47,6 +47,33 @@ jobs:
 
 It is highly recommended to use [github secrets](https://docs.github.com/en/actions/reference/encrypted-secrets) instead of plaintext inclusions for more sensitive data like the IP or the password.
 
+## Using environment variables
+You can use env variables to your hearts content, you just need to use [context properties](https://docs.github.com/en/actions/learn-github-actions/contexts) notation.
+
+### Examples:
+
+**Runtime variables:**
+
+```yml
+commands: '["say actor ${{ github.actor }}"]'
+```
+
+![image](https://user-images.githubusercontent.com/7681159/203531828-37b3b87c-d009-4266-b987-f2d45eda09e3.png)
+
+
+**Custom Variables:**
+
+```yml
+env:
+  DAY_OF_WEEK: Monday
+
+...
+commands: '["say day ${{ env.DAY_OF_WEEK }}"]'
+```
+
+![image](https://user-images.githubusercontent.com/7681159/203531474-e763c776-a635-4394-8a21-c370e5047333.png)
+
+
 ## Credits
 
 - Node-RCON taken from https://github.com/tehbeard/node-rcon by @tehbeard.
