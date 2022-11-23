@@ -1,6 +1,6 @@
 {
   "name": "rcon-action",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "Integrate RCON actions into your github workflow",
   "main": "index.js",
   "scripts": {
