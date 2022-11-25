@@ -15,9 +15,9 @@ jobs:
     name: RCON Test Dev
     steps:
       - name: RCON Connection
-        uses: Plagiatus/RCON-Action@v0.1
+        uses: Plagiatus/RCON-Action@v0.2
         with:
           server: ${{ secrets.rcon_server }}
           port: ${{ secrets.rcon_port }}
           password: ${{ secrets.rcon_password }}
-          commands: '["tellraw @a [{\\"text\\":\\"${{env.DAY_OF_WEEK}}\\"}]", "say ref: ${{ github.ref }}", "say ip ${{ secrets.rcon_server }}", "say actor ${{ github.actor }}", "reload"]'
+          commands: '["tellraw @a [{\\\"text\\\":\\\"${{env.DAY_OF_WEEK}}\\\"}]", "say ref: ${{ github.ref }}", "say ip ${{ secrets.rcon_server }}", "say actor ${{ github.actor }}", "reload"]'
