@@ -15,7 +15,7 @@ async function run() {
 			port: core.getInput("port"),
 			password: core.getInput("password"),
 			commands: JSON.parse(core.getInput("commands")),
-			sendPushInfo: core.getInput("send-push-info"),
+			sendPushInfo: core.getBooleanInput("send-push-info"),
 			pushInfoRecipient: core.getInput("push-info-recipient"),
 		}
 		const payload = JSON.stringify(github.context.payload, undefined, 2);
