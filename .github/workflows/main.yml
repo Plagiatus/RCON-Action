@@ -18,3 +18,4 @@ jobs:
           port: ${{ secrets.rcon_port }}
           password: ${{ secrets.rcon_password }}
           commands: '["say hi", "reload"]'
+          send-push-info: false
