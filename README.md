@@ -26,7 +26,7 @@ jobs:
     name: RCON Test
     steps:
       - name: RCON Connection
-        uses: Plagiatus/RCON-Action@v0.2
+        uses: Plagiatus/RCON-Action@v0.3
         with:
           server: ${{ secrets.rcon_server }}
           port: ${{ secrets.rcon_port }}
